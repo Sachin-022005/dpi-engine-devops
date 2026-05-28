@@ -1044,6 +1044,200 @@ This DPI engine demonstrates:
 
 The key insight is that even HTTPS traffic leaks the destination domain in the TLS handshake, allowing network operators to identify and control application usage.
 
+
+
+apart from this im adding this cloud contribution to it 
+
+# DPI Engine DevOps Project 🚀
+
+A complete DevOps implementation for a full-stack Todo application with monitoring and container orchestration.
+
+---
+
+# 📌 Project Overview
+
+This project demonstrates how a modern application can be containerized, monitored, and managed using DevOps tools.
+
+The setup includes:
+
+- Full-stack Todo Application
+- Docker containerization
+- Docker Compose orchestration
+- Prometheus monitoring
+- Grafana dashboards
+- Real-time infrastructure observability
+
+---
+
+# 🛠️ Tech Stack
+
+| Tool | Purpose |
+|------|----------|
+| Docker | Containerization |
+| Docker Compose | Multi-container management |
+| Prometheus | Metrics collection |
+| Grafana | Monitoring dashboards |
+| Node.js / Frontend | Application layer |
+
+---
+
+# 📂 Project Structure
+
+```bash
+dpi-engine-devops/
+│
+├── docker-compose.yml
+├── prometheus.yml
+├── grafana/
+│   └── dashboards/
+├── screenshots/
+├── README.md
+```
+
+---
+
+# ⚙️ DevOps Features Added
+
+## ✅ Dockerization
+The application was containerized using Docker for consistent deployment across environments.
+
+## ✅ Multi-Container Setup
+Docker Compose was used to manage:
+- Application service
+- Prometheus service
+- Grafana service
+
+## ✅ Monitoring & Observability
+Prometheus collects metrics from containers and services.
+
+Grafana visualizes:
+- CPU usage
+- Memory consumption
+- Container health
+- Network metrics
+
+## ✅ Infrastructure Monitoring
+Real-time monitoring dashboards were implemented for production-style visibility.
+
+---
+
+# 🧠 System Design
+
+```text
+                +-------------------+
+                |   User Browser    |
+                +---------+---------+
+                          |
+                          v
+                +-------------------+
+                |   Todo Frontend   |
+                +---------+---------+
+                          |
+                          v
+                +-------------------+
+                |   Backend/API     |
+                +---------+---------+
+                          |
+         -----------------------------------
+         |                                 |
+         v                                 v
++------------------+          +----------------------+
+|   Prometheus     |<---------|   Application Metrics |
++---------+--------+          +----------------------+
+          |
+          v
++------------------+
+|     Grafana      |
++------------------+
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone <your-repo-link>
+cd dpi-engine-devops
+```
+
+---
+
+# ▶️ Run Application
+
+```bash
+docker-compose up -d
+```
+
+---
+
+# 🌐 Access Services
+
+| Service | URL |
+|---------|-----|
+| Todo App | http://localhost:3000 |
+| Prometheus | http://localhost:9090 |
+| Grafana | http://localhost:3001 |
+
+---
+
+# 📊 Grafana Login
+
+```txt
+Username: admin
+Password: admin
+```
+
+---
+
+# 📸 Screenshots
+
+Screenshots are available in the `screenshots/` folder.
+
+Included:
+- Docker containers
+- Todo application
+- Prometheus targets
+- Grafana dashboard
+- Project structure
+
+---
+
+# 📈 Monitoring Dashboards
+
+Imported Grafana dashboards:
+- Node Exporter Full (ID: 1860)
+- Docker Monitoring Dashboard
+- Prometheus Metrics Dashboard
+
+---
+
+# 🎯 Learning Outcomes
+
+Through this project I learned:
+- Docker containerization
+- Infrastructure monitoring
+- Metrics collection
+- Multi-container orchestration
+- Observability fundamentals
+- Production-style DevOps workflows
+
+---
+
+# 🔥 Future Improvements
+
+- Kubernetes deployment
+- CI/CD pipelines
+- Jenkins integration
+- Cloud deployment (AWS/GCP)
+- Alertmanager integration
+
+---
+
+# 👨‍💻 Author
+
+Sachin Sharma
 ---
 
 ## Questions?
